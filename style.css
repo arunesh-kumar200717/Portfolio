@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: 'JetBrains Mono', monospace;
+  background: #020617;
+  color: #e5e7eb;
+}
+
+a { color: #38bdf8; text-decoration: none; }
+
+.green { color: #22c55e; }
+.blue { color: #38bdf8; }
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #020617, #020617);
+  padding: 15px 0;
+  z-index: 1000;
+  border-bottom: 1px solid #1e293b;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar a {
+  color: #e5e7eb;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 120px 60px 60px;
+  border-bottom: 1px solid #1e293b;
+  gap: 40px;
+}
+
+.hero-left { max-width: 65%; }
+.hero-right { max-width: 35%; }
+
+.profile-img {
+  width: 260px;
+  border-radius: 15px;
+  border: 2px solid #22c55e;
+  box-shadow: 0 0 25px rgba(34,197,94,0.6);
+}
+
+/* STATS */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+  padding: 40px;
+  text-align: center;
+  border-bottom: 1px solid #1e293b;
+}
+
+section {
+  padding: 60px;
+  border-bottom: 1px solid #1e293b;
+}
+
+/* SKILLS */
+.skill-box { margin-bottom: 15px; }
+
+.bar {
+  background: #1e293b;
+  height: 8px;
+  border-radius: 5px;
+}
+
+.bar div {
+  height: 100%;
+  background: #22c55e;
+}
+
+/* PROJECTS */
+.project {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 4px solid #38bdf8;
+  background: #020617;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+}
